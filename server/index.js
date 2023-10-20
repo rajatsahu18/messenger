@@ -10,7 +10,7 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
-mongoose.set("strictQuery", false)
+mongoose.set("strictQuery", false);
 
 mongoose
   .connect(process.env.MONGO_URL, {
@@ -18,7 +18,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("DB Connetion Successfull");
+    console.log("DB Connection Successful");
   })
   .catch((err) => {
     console.log(err.message);

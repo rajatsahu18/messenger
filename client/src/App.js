@@ -1,18 +1,10 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import { Chat, Login, Register } from "./pages";
-import { SetAvatar } from "./components";
+import { AllRoutes } from "./pages";
 
 export default function App() {
   return (
-    <>
-    {/* <VideoContainer /> */}
-    <Routes>
-      <Route path="/register" element={<Register />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/setAvatar" element={<SetAvatar />} />
-      <Route path="/" element={<Chat />} />
-    </Routes>
-    </>
+    <div>
+      <AllRoutes />
+    </div>
   );
 }
